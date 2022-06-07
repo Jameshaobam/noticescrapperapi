@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'scrapper.apps.ScrapperConfig',
     'rest_framework',
     "corsheaders",
+    'extranotice.apps.ExtranoticeConfig',
 ]
 
 MIDDLEWARE = [
