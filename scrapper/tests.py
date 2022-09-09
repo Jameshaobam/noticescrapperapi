@@ -38,6 +38,7 @@ def syllabus():
 def extra_notices():
     try:
         URL="http://127.0.0.1:8000/notice/api/v2/extra-notice/?format=json"
+        
         MY_USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) ' \
                         'Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56 '
         headers = {"User-Agent": MY_USER_AGENT}
@@ -49,7 +50,7 @@ def extra_notices():
             print(datas.get('status'))
 
             for data in datas['data']:
-             print(data['title'],data['url'])
+             print(data['title'],data['url'],data['is_image'])
         else:
             print(datas.get('status'))
 

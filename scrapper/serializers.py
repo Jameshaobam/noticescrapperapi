@@ -12,4 +12,4 @@ class SyllabusSerializer(serializers.Serializer):
 class ExtraNoticeSerializer(serializers.ModelSerializer):
         class Meta:
           model = ExtraNotice
-          fields = ["title", "url", "date"]
+          fields = ["title", "url", "date","is_image"]
